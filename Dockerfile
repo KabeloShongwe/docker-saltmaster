@@ -6,7 +6,7 @@ ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt-get update -qq && apt-get -y install software-properties-common
 ADD install_salt.sh /tmp/
-RUN sh /tmp/install_salt.sh git v2014.7.0rc4
+RUN sh /tmp/install_salt.sh git v2014.7.0rc5
 ADD hotrod-master.conf /etc/salt/master.d/
 
 VOLUME ["/pki","/var/cache/salt","/var/log/salt"]
