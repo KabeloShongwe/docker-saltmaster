@@ -7,7 +7,7 @@ ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get update -qq && apt-get -y install software-properties-common
 RUN apt-get -y install python-git
 ADD install_salt.sh /tmp/
-RUN sh /tmp/install_salt.sh -M -N git v2014.7.0rc5
+RUN sh /tmp/install_salt.sh -M -N git v2014.7.0rc6
 ADD hotrod-master.conf /etc/salt/master.d/
 
 VOLUME ["/pki","/var/cache/salt","/var/log/salt"]
