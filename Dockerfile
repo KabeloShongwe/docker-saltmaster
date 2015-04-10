@@ -1,4 +1,4 @@
-FROM ubuntu:14.04.1
+FROM ubuntu:14.04.2
 MAINTAINER Stephan Buys <stephan.buys@panoptix.co.za>
 
 ENV REFRESHED_ON "10 Apr 2015"
