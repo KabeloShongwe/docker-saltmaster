@@ -8,7 +8,7 @@ RUN apt-get update -qq && apt-get -y install software-properties-common
 RUN add-apt-repository ppa:saltstack/salt
 RUN apt-get update -qq && apt-get install -y salt-master
 ADD hotrod-master.conf /etc/salt/master.d/
-ADD cluster.sh /usr/bin/cluster.sh
+# ADD cluster.sh /usr/bin/cluster.sh
 
 VOLUME ["/pki","/var/cache/salt","/var/log/salt"]
 EXPOSE 4505 4506
