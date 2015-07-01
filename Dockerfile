@@ -1,7 +1,7 @@
 FROM ubuntu:14.04.2
 MAINTAINER Stephan Buys <stephan.buys@panoptix.co.za>
 
-ENV REFRESHED_ON "10 Apr 2015"
+ENV REFRESHED_ON "1 Jul 2015"
 ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt-get update -qq && apt-get -y install software-properties-common
