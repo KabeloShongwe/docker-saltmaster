@@ -1,13 +1,13 @@
-FROM ubuntu:14.04.1
+FROM ubuntu:14.04.2
 MAINTAINER Stephan Buys <stephan.buys@panoptix.co.za>
 
-ENV REFRESHED_ON "12 Nov 2014"
+ENV REFRESHED_ON "08 Jul 2015"
 ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt-get update -qq && apt-get -y install software-properties-common
 RUN apt-get -y install python-git
 ADD install_salt.sh /tmp/
-RUN sh /tmp/install_salt.sh -M -N git v2014.7.0
+RUN sh /tmp/install_salt.sh -M -N git v2014.7.6
 ADD hotrod-master.conf /etc/salt/master.d/
 
 VOLUME ["/pki","/var/cache/salt","/var/log/salt"]
